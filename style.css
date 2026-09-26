@@ -1,7 +1,14 @@
-body{
-    background-color: beige;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-h1{
-    color: rebeccapurple;
+
+.conatainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 217px;
+    background-color: rgb(148, 148, 221);
 }
