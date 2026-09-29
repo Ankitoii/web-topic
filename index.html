@@ -3,11 +3,1194 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Git & GitHub Master Guide</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>hello coders</h1>
-    <script src="./first.js"></script>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="logo">
+            <span>⌘</span> GitHub Master
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#basics">Git Basics</a>
+            <a href="#branch">Branches</a>
+            <a href="#github">GitHub</a>
+            <a href="#advanced">Advanced</a>
+        </nav>
+
+        <button id="themeBtn">🌙</button>
+
+    </header>
+
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-title">DEVELOPER COMMAND CENTER</p>
+
+            <h1>
+                Git & GitHub
+                <span>Master Guide</span>
+            </h1>
+
+            <p>
+                Learn Git and GitHub from beginner to advanced
+                with practical commands and workflows.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#basics" class="btn primary">
+                    Start Learning
+                </a>
+
+                <a href="#github" class="btn secondary">
+                    GitHub Workflow
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SEARCH -->
+    <section class="search-section">
+
+        <input
+            type="text"
+            id="search"
+            placeholder="🔎 Search Git command..."
+        >
+
+    </section>
+
+
+    <!-- GIT BASICS -->
+    <section id="basics" class="section">
+
+        <div class="section-title">
+            <p>01 — FOUNDATION</p>
+            <h2>Git Basics</h2>
+        </div>
+
+
+        <div class="command-grid">
+
+
+            <div class="command-card">
+
+                <h3>git --version</h3>
+
+                <p>
+                    Check the installed Git version.
+                </p>
+
+                <div class="code">
+                    <code>git --version</code>
+
+                    <button onclick="copyCode(this)">
+                        Copy
+                    </button>
+                </div>
+
+            </div>
+
+
+            <div class="command-card">
+
+                <h3>git config</h3>
+
+                <p>
+                    Configure your Git username.
+                </p>
+
+                <div class="code">
+
+                    <code>
+git config --global user.name "Your Name"
+                    </code>
+
+                    <button onclick="copyCode(this)">
+                        Copy
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="command-card">
+
+                <h3>git config email</h3>
+
+                <p>
+                    Configure your Git email.
+                </p>
+
+                <div class="code">
+
+                    <code>
+git config --global user.email "you@example.com"
+                    </code>
+
+                    <button onclick="copyCode(this)">
+                        Copy
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="command-card">
+
+                <h3>git config --list</h3>
+
+                <p>
+                    Display Git configuration.
+                </p>
+
+                <div class="code">
+
+                    <code>
+git config --list
+                    </code>
+
+                    <button onclick="copyCode(this)">
+                        Copy
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="command-card">
+
+                <h3>git init</h3>
+
+                <p>
+                    Create a new Git repository.
+                </p>
+
+                <div class="code">
+
+                    <code>
+git init
+                    </code>
+
+                    <button onclick="copyCode(this)">
+                        Copy
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="command-card">
+
+                <h3>git status</h3>
+
+                <p>
+                    Check the current repository status.
+                </p>
+
+                <div class="code">
+
+                    <code>
+git status
+                    </code>
+
+                    <button onclick="copyCode(this)">
+                        Copy
+                    </button>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- STAGING -->
+    <section class="section dark-section">
+
+        <div class="section-title">
+
+            <p>02 — VERSION CONTROL</p>
+
+            <h2>Staging & Commits</h2>
+
+        </div>
+
+
+        <div class="command-grid">
+
+
+            <div class="command-card">
+
+                <h3>git add</h3>
+
+                <p>
+                    Add a file to the staging area.
+                </p>
+
+                <div class="code">
+
+                    <code>
+git add index.html
+                    </code>
+
+                    <button onclick="copyCode(this)">
+                        Copy
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="command-card">
+
+                <h3>git add .</h3>
+
+                <p>
+                    Stage all changed files.
+                </p>
+
+                <div class="code">
+
+                    <code>
+git add .
+                    </code>
+
+                    <button onclick="copyCode(this)">
+                        Copy
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="command-card">
+
+                <h3>git commit</h3>
+
+                <p>
+                    Save staged changes.
+                </p>
+
+                <div class="code">
+
+                    <code>
+git commit -m "Initial commit"
+                    </code>
+
+                    <button onclick="copyCode(this)">
+                        Copy
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="command-card">
+
+                <h3>git log</h3>
+
+                <p>
+                    View commit history.
+                </p>
+
+                <div class="code">
+
+                    <code>
+git log
+                    </code>
+
+                    <button onclick="copyCode(this)">
+                        Copy
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="command-card">
+
+                <h3>git log --oneline</h3>
+
+                <p>
+                    Display compact commit history.
+                </p>
+
+                <div class="code">
+
+                    <code>
+git log --oneline
+                    </code>
+
+                    <button onclick="copyCode(this)">
+                        Copy
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="command-card">
+
+                <h3>git diff</h3>
+
+                <p>
+                    See changes that are not staged.
+                </p>
+
+                <div class="code">
+
+                    <code>
+git diff
+                    </code>
+
+                    <button onclick="copyCode(this)">
+                        Copy
+                    </button>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- BRANCHES -->
+    <section id="branch" class="section">
+
+        <div class="section-title">
+
+            <p>03 — BRANCHING</p>
+
+            <h2>Branches & Merging</h2>
+
+        </div>
+
+
+        <div class="command-grid">
+
+
+            <div class="command-card">
+
+                <h3>git branch</h3>
+
+                <p>
+                    List existing branches.
+                </p>
+
+                <div class="code">
+
+                    <code>
+git branch
+                    </code>
+
+                    <button onclick="copyCode(this)">
+                        Copy
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="command-card">
+
+                <h3>Create Branch</h3>
+
+                <p>
+                    Create a new branch.
+                </p>
+
+                <div class="code">
+
+                    <code>
+git branch feature
+                    </code>
+
+                    <button onclick="copyCode(this)">
+                        Copy
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="command-card">
+
+                <h3>git switch</h3>
+
+                <p>
+                    Switch to another branch.
+                </p>
+
+                <div class="code">
+
+                    <code>
+git switch feature
+                    </code>
+
+                    <button onclick="copyCode(this)">
+                        Copy
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="command-card">
+
+                <h3>Create + Switch</h3>
+
+                <p>
+                    Create and switch to a branch.
+                </p>
+
+                <div class="code">
+
+                    <code>
+git switch -c feature
+                    </code>
+
+                    <button onclick="copyCode(this)">
+                        Copy
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="command-card">
+
+                <h3>git merge</h3>
+
+                <p>
+                    Merge another branch.
+                </p>
+
+                <div class="code">
+
+                    <code>
+git merge feature
+                    </code>
+
+                    <button onclick="copyCode(this)">
+                        Copy
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="command-card">
+
+                <h3>Delete Branch</h3>
+
+                <p>
+                    Delete a local branch.
+                </p>
+
+                <div class="code">
+
+                    <code>
+git branch -d feature
+                    </code>
+
+                    <button onclick="copyCode(this)">
+                        Copy
+                    </button>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- GITHUB -->
+    <section id="github" class="section dark-section">
+
+        <div class="section-title">
+
+            <p>04 — REMOTE DEVELOPMENT</p>
+
+            <h2>GitHub Commands</h2>
+
+        </div>
+
+
+        <div class="command-grid">
+
+
+            <div class="command-card">
+
+                <h3>git remote</h3>
+
+                <p>
+                    View remote repositories.
+                </p>
+
+                <div class="code">
+
+                    <code>
+git remote -v
+                    </code>
+
+                    <button onclick="copyCode(this)">
+                        Copy
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="command-card">
+
+                <h3>git remote add</h3>
+
+                <p>
+                    Connect local Git to GitHub.
+                </p>
+
+                <div class="code">
+
+                    <code>
+git remote add origin https://github.com/user/repo.git
+                    </code>
+
+                    <button onclick="copyCode(this)">
+                        Copy
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="command-card">
+
+                <h3>git push</h3>
+
+                <p>
+                    Upload commits to GitHub.
+                </p>
+
+                <div class="code">
+
+                    <code>
+git push origin main
+                    </code>
+
+                    <button onclick="copyCode(this)">
+                        Copy
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="command-card">
+
+                <h3>git push -u</h3>
+
+                <p>
+                    Push and set the upstream branch.
+                </p>
+
+                <div class="code">
+
+                    <code>
+git push -u origin main
+                    </code>
+
+                    <button onclick="copyCode(this)">
+                        Copy
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="command-card">
+
+                <h3>git clone</h3>
+
+                <p>
+                    Download a GitHub repository.
+                </p>
+
+                <div class="code">
+
+                    <code>
+git clone https://github.com/user/repo.git
+                    </code>
+
+                    <button onclick="copyCode(this)">
+                        Copy
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="command-card">
+
+                <h3>git pull</h3>
+
+                <p>
+                    Download and integrate remote changes.
+                </p>
+
+                <div class="code">
+
+                    <code>
+git pull origin main
+                    </code>
+
+                    <button onclick="copyCode(this)">
+                        Copy
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="command-card">
+
+                <h3>git fetch</h3>
+
+                <p>
+                    Download remote changes without merging.
+                </p>
+
+                <div class="code">
+
+                    <code>
+git fetch origin
+                    </code>
+
+                    <button onclick="copyCode(this)">
+                        Copy
+                    </button>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- UNDO -->
+    <section class="section">
+
+        <div class="section-title">
+
+            <p>05 — RECOVERY</p>
+
+            <h2>Undo & Restore</h2>
+
+        </div>
+
+
+        <div class="command-grid">
+
+
+            <div class="command-card">
+
+                <h3>git restore</h3>
+
+                <p>
+                    Restore a working file.
+                </p>
+
+                <div class="code">
+
+                    <code>
+git restore index.html
+                    </code>
+
+                    <button onclick="copyCode(this)">
+                        Copy
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="command-card">
+
+                <h3>git restore --staged</h3>
+
+                <p>
+                    Remove a file from staging.
+                </p>
+
+                <div class="code">
+
+                    <code>
+git restore --staged index.html
+                    </code>
+
+                    <button onclick="copyCode(this)">
+                        Copy
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="command-card">
+
+                <h3>git reset</h3>
+
+                <p>
+                    Move HEAD and modify staging.
+                </p>
+
+                <div class="code">
+
+                    <code>
+git reset HEAD~1
+                    </code>
+
+                    <button onclick="copyCode(this)">
+                        Copy
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="command-card">
+
+                <h3>git revert</h3>
+
+                <p>
+                    Create a new commit that reverses an old commit.
+                </p>
+
+                <div class="code">
+
+                    <code>
+git revert HEAD
+                    </code>
+
+                    <button onclick="copyCode(this)">
+                        Copy
+                    </button>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- STASH -->
+    <section class="section dark-section">
+
+        <div class="section-title">
+
+            <p>06 — TEMPORARY STORAGE</p>
+
+            <h2>Git Stash</h2>
+
+        </div>
+
+
+        <div class="command-grid">
+
+
+            <div class="command-card">
+
+                <h3>git stash</h3>
+
+                <p>
+                    Temporarily save uncommitted changes.
+                </p>
+
+                <div class="code">
+
+                    <code>
+git stash
+                    </code>
+
+                    <button onclick="copyCode(this)">
+                        Copy
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="command-card">
+
+                <h3>git stash list</h3>
+
+                <p>
+                    View saved stashes.
+                </p>
+
+                <div class="code">
+
+                    <code>
+git stash list
+                    </code>
+
+                    <button onclick="copyCode(this)">
+                        Copy
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="command-card">
+
+                <h3>git stash pop</h3>
+
+                <p>
+                    Apply the latest stash and remove it.
+                </p>
+
+                <div class="code">
+
+                    <code>
+git stash pop
+                    </code>
+
+                    <button onclick="copyCode(this)">
+                        Copy
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="command-card">
+
+                <h3>git stash apply</h3>
+
+                <p>
+                    Apply a stash without deleting it.
+                </p>
+
+                <div class="code">
+
+                    <code>
+git stash apply
+                    </code>
+
+                    <button onclick="copyCode(this)">
+                        Copy
+                    </button>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ADVANCED -->
+    <section id="advanced" class="section">
+
+        <div class="section-title">
+
+            <p>07 — ADVANCED</p>
+
+            <h2>Advanced Git</h2>
+
+        </div>
+
+
+        <div class="command-grid">
+
+
+            <div class="command-card">
+
+                <h3>git tag</h3>
+
+                <p>
+                    Create a release tag.
+                </p>
+
+                <div class="code">
+
+                    <code>
+git tag v1.0.0
+                    </code>
+
+                    <button onclick="copyCode(this)">
+                        Copy
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="command-card">
+
+                <h3>Push Tag</h3>
+
+                <p>
+                    Push a tag to GitHub.
+                </p>
+
+                <div class="code">
+
+                    <code>
+git push origin v1.0.0
+                    </code>
+
+                    <button onclick="copyCode(this)">
+                        Copy
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="command-card">
+
+                <h3>git reflog</h3>
+
+                <p>
+                    View reference history.
+                </p>
+
+                <div class="code">
+
+                    <code>
+git reflog
+                    </code>
+
+                    <button onclick="copyCode(this)">
+                        Copy
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="command-card">
+
+                <h3>git cherry-pick</h3>
+
+                <p>
+                    Apply a specific commit to your branch.
+                </p>
+
+                <div class="code">
+
+                    <code>
+git cherry-pick abc123
+                    </code>
+
+                    <button onclick="copyCode(this)">
+                        Copy
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="command-card">
+
+                <h3>git rebase</h3>
+
+                <p>
+                    Reapply commits on top of another base.
+                </p>
+
+                <div class="code">
+
+                    <code>
+git rebase main
+                    </code>
+
+                    <button onclick="copyCode(this)">
+                        Copy
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="command-card">
+
+                <h3>git blame</h3>
+
+                <p>
+                    See who changed each line.
+                </p>
+
+                <div class="code">
+
+                    <code>
+git blame index.html
+                    </code>
+
+                    <button onclick="copyCode(this)">
+                        Copy
+                    </button>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- WORKFLOW -->
+    <section class="workflow">
+
+        <div class="section-title">
+
+            <p>08 — DAILY WORKFLOW</p>
+
+            <h2>Professional Git Workflow</h2>
+
+        </div>
+
+
+        <div class="terminal">
+
+            <div class="terminal-header">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
+
+
+            <pre><code>
+# 1. Clone project
+
+git clone https://github.com/user/project.git
+
+# 2. Enter project
+
+cd project
+
+# 3. Create feature branch
+
+git switch -c feature
+
+# 4. Work on your project
+
+# 5. Check changes
+
+git status
+
+# 6. Stage files
+
+git add .
+
+# 7. Commit
+
+git commit -m "Add new feature"
+
+# 8. Push branch
+
+git push -u origin feature
+
+# 9. Create Pull Request on GitHub
+
+# 10. After merging, update main
+
+git switch main
+
+git pull origin main
+            </code></pre>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <h2>Git & GitHub Master</h2>
+
+        <p>
+            Learn → Practice → Commit → Push → Collaborate 🚀
+        </p>
+
+        <p class="copyright">
+            © 2026 Git Learning Hub
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
